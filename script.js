@@ -32,7 +32,7 @@ function switchTab(clickedTab){
             searchForm.classList.add("active");
         }else{
             searchForm.classList.remove("active");
-            // grantAccessContainer.remove("active");
+            grantAccessContainer.remove("active");
             userInfoContainer.classList.remove("active");
             getFromSessionStorage();
         }
@@ -110,8 +110,8 @@ function getLocation(){
     }
     
     else{
-        console.log("I am here");
-        alert("Not Available");
+        // console.log("I am here");
+        // alert("Not Available");
     }
 }
 
