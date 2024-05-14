@@ -107,10 +107,28 @@ h1{
     color: white;
 }
 
+.error{
+    display: none;
+}
+.error.active{
+    display: block;
+}
+
+.errorMessage{
+    display: flex;
+    color: white;
+    margin:4rem auto;
+    font-size: large;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .form-container{
     display:none; 
     width: 550px;
-    margin: 0 auto;
+    margin: 2rem auto;
     justify-content: center;
     align-items: center;
     
@@ -118,11 +136,11 @@ h1{
 }
 .form-container.active{
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 .form-container input{
     all: unset;
-    width: calc(100% - 80px);
+    width: calc(100% - 100px);
     height: 40px;
     font-size: small;
     font-weight: 400;
@@ -161,11 +179,12 @@ h1{
 }
 .loading-container.active{
     display: flex;
+    margin:2rem;
 }
 
 .user-info-container{
     display: none;
-}
+} 
 .user-info-container.active{
     display: flex;
     margin: 2rem;
@@ -214,7 +233,7 @@ h1{
 
 .parameter{
     width: 30%;
-    max-width: 200px;
+    /* max-width: 200px; */
     background-color: rgba(219, 226, 239, 0.5);
     border-radius: 5px;
     padding:1.5rem;
