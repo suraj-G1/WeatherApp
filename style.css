@@ -22,18 +22,24 @@ body{
     width: 100vw;
 }
 h1{
+    padding-top: 1rem;
     text-align: center;
+    color: white;
 }
 
 .wrapper{
     background-image: linear-gradient(180deg,var(--darkColor1) 0%,var(--darkColor2) 100%);
-    
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 .tab.current-tab{
     background-color: rgba(219, 226, 239, 0.5);
     border-radius: 4px;
+}
+.tab{
+    color: white;
 }
 
 .tab-container{
@@ -46,29 +52,35 @@ h1{
 }
 
 .weather-container{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.grant-location-container{
+    flex-direction: column; */
+    margin-block:2rem;
+} 
+.sub-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    opacity: 0;
+}
+
+.grant-location-container{
+    
+    display: none;
     
 }
 
 .grant-location-container.active{
-    opacity: 1;
+    display: flex;
 }
 
 .grant-location-container button{
-    
-    padding: 4px 8px;
+    all: unset;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 8px 16px;
     background-color: var(--darkColor1);
     border-radius: 6px;
     color: white;
@@ -79,41 +91,155 @@ h1{
 
 .grant-location-container button:hover{
     background-color: var(--darkColor2);
+    
 }
 
 .grant-location-container p:first-of-type{
     font-size: 20px;
     font-weight: 800;
     text-transform: capitalize;
+    color: white;
 }
 .grant-location-container p:last-of-type{
     font-size: small;
     font-weight: 500;
     text-transform: capitalize;
+    color: white;
 }
 
 .form-container{
+    display:none; 
+    width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.form-container.active{
     display: flex;
     gap: 0.5rem;
 }
 .form-container input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
     font-size: small;
     font-weight: 400;
     border-radius: 5px;
+    background-color: rgba(219, 226, 239, 0.5);
     padding: 0 5px;
 }
 
+.form-container input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+.form-container input:focus{
+    outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.SearchButton{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 .btn{
+    /* all: unset; */
     cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.80rem;
+    cursor: pointer;
+    
 }
 
 .loading-container{
+    display: none;
+}
+.loading-container.active{
     display: flex;
-    flex-direction: column;
+}
+
+.user-info-container{
+    display: none;
+}
+.user-info-container.active{
+    display: flex;
+    margin: 2rem;
+    color: white;
+}
+.user-info-container p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.user-info-container img{
+    width: 90px;
+    height: 90px;
+}
+
+.name{
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    color: white;
 }
+
+.name p{
+    font-size: 1.5rem;
+}
+.name img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.user-info-container p[data-temp]{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.parameter-container{
+    display: flex;
+    gap: 10px 20px;
+    justify-content: center;
+    max-width: 550px;
+    
+    
+}
+
+.parameter{
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    padding:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.parameter img{
+    height: 50px;
+    width: 50px;
+}
+
+.parameter p:first-of-type{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
 
 
 

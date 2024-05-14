@@ -27,7 +27,7 @@
       <!-- Show Weather Container -->
       <div class="weather-container">
         <!-- Grant Location Container -->
-        <div class="grant-location-container">
+        <div class="sub-container grant-location-container">
           <!-- <i class="fa-solid fa-location-dot"></i> -->
           <img
             src="./Assets/map-1272165_1280.png"
@@ -49,7 +49,7 @@
             placeholder="Search For city ...."
             data-searchInput
           />
-          <button class="btn">
+          <button class="SearchButton">
             <img
               src="./Assets/icons8-search.svg"
               alt=""
@@ -61,7 +61,7 @@
         </form>
 
         <!-- Loading Screen Container -->
-        <div class="loading-container">
+        <div class="sub-container loading-container">
           <img
             src="Assets/loading-7528_256.gif"
             alt=""
@@ -72,12 +72,12 @@
         </div>
 
         <!-- Show Weather Info -->
-        <div class="user-info-container">
+        <div class="user-info-container sub-container">
           <!-- City Name and Flag -->
 
           <div class="name">
             <p data-city></p>
-            <img data-countryIcon height="30px" width="30px" />
+            <img data-countryIcon  />
           </div>
 
           <!-- Weather Description -->
@@ -95,7 +95,7 @@
             <!-- Card 1 -->
             <div class="parameter">
               <img src="Assets/icons8-wind-50.png" alt="" />
-              <p>Wind Speed</p>
+              <p>WindSpeed</p>
               <p data-windSpeed></p>
             </div>
 

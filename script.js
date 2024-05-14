@@ -86,8 +86,8 @@ function renderWeatherInfo(weatherInfo){
     const countryFlag = document.querySelector("[data-countryIcon]");
     const weatherDesc = document.querySelector("[data-weatherDesc]");
     const weatherIcon = document.querySelector("[data-weatherIcon]");
-    const temp = document.querySelector("[data-temp");
-    const windSpeed = document.querySelector("data-windSpeed");
+    const temp = document.querySelector("[data-temp]");
+    const windSpeed = document.querySelector("[data-windSpeed]");
     const humidity = document.querySelector("[data-humidity]");
     const cloudiness = document.querySelector("[data-cloudiness]");
 
@@ -95,7 +95,7 @@ function renderWeatherInfo(weatherInfo){
     countryFlag.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
     weatherDesc.innerText = weatherInfo?.weather?.[0]?.description;
     weatherIcon.src = `https://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
-    temp.innerText = weatherInfo?.main?.temp;
+    temp.innerText = `${weatherInfo?.main?.temp}°C`;
     windSpeed.innerText = weatherInfo?.wind?.speed;
     humidity.innerText = weatherInfo?.main?.humidity;
     cloudiness.innerText = weatherInfo?.clouds?.all;
