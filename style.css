@@ -209,7 +209,7 @@ h1{
 }
 
 .name p{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .name img{
     width: 30px;
@@ -246,8 +246,8 @@ h1{
 }
 
 .parameter img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 45px;
 }
 
 .parameter p:first-of-type{
@@ -256,7 +256,7 @@ h1{
     font-weight: 500;
 }
 .parameter p:last-of-type{
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 200;
 }
 
