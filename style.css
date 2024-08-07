@@ -234,6 +234,7 @@ h1{
 .parameter{
     width: 30%;
     /* max-width: 200px; */
+    height: fit-content;
     background-color: rgba(219, 226, 239, 0.5);
     border-radius: 5px;
     padding:1.5rem;
