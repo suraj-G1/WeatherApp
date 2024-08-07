@@ -20,6 +20,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    overflow:none;
 }
 h1{
     padding-top: 1rem;
