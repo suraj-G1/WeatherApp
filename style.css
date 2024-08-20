@@ -266,3 +266,25 @@ h1{
 
 
 
+.error {
+  display: none;
+}
+
+.error.active {
+  display: block;
+}
+
+.errorMessage {
+  color: white;
+  margin: 4rem auto;
+  font-size: large;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
