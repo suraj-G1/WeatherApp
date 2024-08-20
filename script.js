@@ -183,5 +183,11 @@ async function fetchSearchWeatherInfo(city) {
     // document.querySelector(".errorMessage").innerText = err.message;
     
     // console.log(err.message);
+
+
+    const errorMess = document.querySelector(".errorMessage");
+    errorMess.classList.add("active");
+    errorMess.innerText = err.message;
+    userInfoContainer.classList.remove("active");
   }
 }
